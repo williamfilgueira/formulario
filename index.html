@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./formulario.css   ">
+    <title> adastro</title>
+</head>
+<body>
+    <div class="container">
+      
+        <h1 id="tituloPrincipal">Cadastro de Clientes</h1>
+        <p id="subtitulo">Preencha suas informações</p>
+        </br>
+    </div>
+    <form>
+        <fieldset class="grupo">
+            <div class="container">
+                <label>Nome</label>
+                <input for="nome" type="text" name="nome" id="nome" required>
+            </div>
+            <div class="container">
+                <label>Sobrenome</label>
+                <input for="sobrenome" type="text" name="sobrenome" id="sobrenome">
+            </div>
+            <div class="container">
+                <label>Tel.</label>
+                <input type="tel" name="numeroTel" id="numeroTel">
+            </div>
+        </fieldset>
+
+        <div class="container">
+            <label>Email</label>
+            <input type="email" nome="email" id="email">
+        </div>
+
+        <div class="container">
+            <label>Endereço</label>
+            <input for="endereco" type="text" name="endereco" id="endereco"><br>
+            <label>n°</label>
+            <input type="number" name="numero" id="numero"><br>
+            <label>Cidade</label>
+            <input for="cidade" type="text" name="cidade" id="cidade"><br>
+            <select id="estados" name="estado">
+                <option value="estado">Selecione o Estado</option> 
+                <option value="ac">Acre</option> 
+                <option value="al">Alagoas</option> 
+                <option value="am">Amazonas</option> 
+                <option value="ap">Amapá</option> 
+                <option value="ba">Bahia</option> 
+                <option value="ce">Ceará</option> 
+                <option value="df">Distrito Federal</option> 
+                <option value="es">Espírito Santo</option> 
+                <option value="go">Goiás</option> 
+                <option value="ma">Maranhão</option> 
+                <option value="mt">Mato Grosso</option> 
+                <option value="ms">Mato Grosso do Sul</option> 
+                <option value="mg">Minas Gerais</option> 
+                <option value="pa">Pará</option> 
+                <option value="pb">Paraíba</option> 
+                <option value="pr">Paraná</option> 
+                <option value="pe">Pernambuco</option> 
+                <option value="pi">Piauí</option> 
+                <option value="rj">Rio de Janeiro</option> 
+                <option value="rn">Rio Grande do Norte</option> 
+                <option value="ro">Rondônia</option> 
+                <option value="rs">Rio Grande do Sul</option> 
+                <option value="rr">Roraima</option> 
+                <option value="sc">Santa Catarina</option> 
+                <option value="se">Sergipe</option> 
+                <option value="sp">São Paulo</option> 
+                <option value="to">Tocantins</option> 
+            </select><br>
+            <label>Você deseja receber nossa notifiçação de promoções?</label><br>
+            <input type="radio" name="notification" value="Sim" checked>Sim
+            <input type="radio" name="notification" value="Não">Não
+            <fieldset class="grupo">
+                <div id="check">
+                    <label>Por onde você nos conheceu?</label>
+                    <input type="checkbox" id="redeSociais1" name="redeSociais1" value="Facebook">
+                    <label for="redeSociais1">Facebook</label>
+                    <input type="checkbox" id="redeSociais2" name="redeSociais2" value="Whatsapp">
+                    <label for="redeSociais2">Whatsapp</label>
+                    <input type="checkbox" id="redeSociais3" name="redeSociais3" value="Facebook3">
+                    <label for="redeSociais3">Facebook</label>
+                </div>
+            </fieldset>
+            <div class="container">
+                <br>
+                <label>Deixe um comentário sobre sua experiência comprando conosco.</label>
+                <textarea row="10" style="width:  25em" id="comentario" name="comentario"></textarea>
+            </div>
+            <button class="botao" type="submit">Concluído</button>
+        </div>
+    </form>
+</body>
+</html>
